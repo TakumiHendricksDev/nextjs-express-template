@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const getData = async () => {
+const getUsers = async () => {
   try {
     const users = await fetch("http://localhost:8000/api/v1/users", {
       cache: 'no-cache',
@@ -18,7 +18,7 @@ type User = {
 }
 
 const Home = async () => {
-  const data: User[] = await getData();
+  const data: User[] = await getUsers();
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center gap-5">
       {data?.map((user) => (
