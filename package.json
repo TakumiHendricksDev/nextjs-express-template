@@ -7,13 +7,13 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "backend": "node src/index.js",
+    "backend": "node src/app.js",
     "frontend": "next dev",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "start_full": "node src/index.js & next dev"
+    "start_full": "node src/app.js & next dev"
   },
   "keywords": [],
   "author": "",
